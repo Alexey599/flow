@@ -156,6 +156,102 @@
         </div>
       </div>
     </footer>
+    <div class="container">
+      <button class="cart-icon">
+        <div class="cart-icon__wrap"><span class="cart-icon__counter">0</span><img class="cart-icon__img" src="images/cart.svg" alt="Корзина"></div>
+      </button>
+    </div>
+    <form class="cart">
+      <div class="cart__wrapper">
+        <div class="cart__close">x</div>
+        <div class="row">
+          <div class="col-12">
+            <h2 class="cart__wrap-title">Корзина</h2>
+          </div>
+        </div>
+        <div class="row wrap">
+          <div class="col-5 col-sm-3">
+            <div class="cart__images">
+              <picture>
+                <source type="image/webp" data-srcset="images/swip1.webp" srcset="images/common/placeholder.png"/><img class="lazy cart__img" data-src="images/swip1.jpg" src="images/common/placeholder.png" alt=""/>
+              </picture>
+              <label class="cards__radio-label">
+                <input class="cards__radio-input" type="radio" name="text"><span class="cart__info cards__info">M</span>
+              </label>
+            </div>
+          </div>
+          <div class="col-7 col-sm-4 col-md-5">
+            <h3 class="cart__title">Название букета</h3>
+          </div>
+          <div class="col-sm-3 col-md-2 d-flex align-items-center quantity">
+            <button class="cart__quant cart__plus">+</button><span class="cart__count">0</span>
+            <button class="cart__quant cart__minus">—</button>
+          </div>
+          <div class="col-sm-2 d-flex justify-content-end totl">
+            <div class="cart__total">4568 руб</div>
+            <div class="cart__remuv">x</div>
+          </div>
+        </div>
+        <div class="row wrap">
+          <div class="col-5 col-sm-3">
+            <div class="cart__images">
+              <picture>
+                <source type="image/webp" data-srcset="images/delivery-photo.webp" srcset="images/common/placeholder.png"/><img class="lazy cart__img" data-src="images/delivery-photo.jpg" src="images/common/placeholder.png" alt=""/>
+              </picture>
+              <label class="cards__radio-label">
+                <input class="cards__radio-input" type="radio" name="text"><span class="cart__info cards__info">M</span>
+              </label>
+            </div>
+          </div>
+          <div class="col-7 col-sm-4 col-md-5">
+            <h3 class="cart__title">Название букета</h3>
+          </div>
+          <div class="col-sm-3 col-md-2 d-flex align-items-center quantity">
+            <button class="cart__quant cart__plus">+</button><span class="cart__count">0</span>
+            <button class="cart__quant cart__minus">—</button>
+          </div>
+          <div class="col-sm-2 d-flex justify-content-end totl">
+            <div class="cart__total">4568 руб</div>
+            <div class="cart__remuv">x</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 d-flex justify-content-end">
+            <div class="cart__total-price">Итого: 25894 руб</div>
+          </div>
+        </div>
+        <div class="form__wrapper">
+          <h3 class="form__title">Заполните форму отправки</h3>
+          <label class="form__label">
+            <input class="form__input" type="text" placeholder="Имя" name="text">
+          </label>
+          <label class="form__label">
+            <input class="form__input" type="tel" placeholder="Телефон" name="phone">
+          </label>
+          <label class="form__check">
+            <input class="form__check-input" type="checkbox" name="value"><span class="form__check-span"></span><span class="form__check-title">Нужна открытка</span>
+          </label>
+          <div class="form__name-deliveri">
+            <label class="form__label">
+              <input class="form__input" type="text" placeholder="Для кого" name="text">
+            </label>
+            <label class="form__label">
+              <input class="form__input" type="text" placeholder="От кого" name="text">
+            </label>
+            <label class="form__label">
+              <textarea class="form__textarea" name="text" placeholder="Пожилание"></textarea>
+            </label>
+          </div>
+          <label class="form__label">
+            <textarea class="form__textarea" name="text" placeholder="Адрес доставки"></textarea>
+          </label>
+          <button class="form__button btn" type="submit">Отправить заявку</button>
+          <label class="form__check">
+            <input class="form__check-input" type="checkbox" name="value"><span class="form__check-span"></span><span class="form__check-title">Политика конфеденциальности</span>
+          </label>
+        </div>
+      </div>
+    </form>
     <script src="js/main.min.js?v=0.0.0.0"></script>
   </body>
 </html>
