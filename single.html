@@ -56,43 +56,23 @@
         </div>
       </nav>
     </header>
-    <div class="cards" id="cards">
+    <div class="cards js-card__wrapper" id="cards">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6">
             <div class="cards__images">
               <picture>
-                <source type="image/webp" data-srcset="images/delivery-photo.webp" srcset="images/common/placeholder.png"/><img class="lazy cards__img" data-src="images/delivery-photo.jpg" src="images/common/placeholder.png" alt=""/>
+                <source type="image/webp" data-srcset="images/delivery-photo.webp" srcset="images/common/placeholder.png"/><img class="lazy cards__img js-card__img" data-src="images/delivery-photo.jpg" src="images/common/placeholder.png" alt=""/>
               </picture>
             </div>
           </div>
           <div class="col-12 col-lg-6">
             <div class="cards__wrapper">
-              <h2 class="cards__title">Заголовок букета</h2>
+              <h2 class="cards__title js-card__title">Заголовок букета</h2>
               <p class="cards__text">Описание товара если нужно Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, temporibus!</p>
-              <div class="cards__wrap">
-                <div class="cards__size">Размер:</div>
-                <div class="cards__radio">
-                  <div class="cards__radio-item">
-                    <label class="cards__radio-label">
-                      <input class="cards__radio-input" type="radio" checked name="text"><span class="cards__info">M</span>
-                    </label>
-                  </div>
-                  <div class="cards__radio-item">
-                    <label class="cards__radio-label">
-                      <input class="cards__radio-input" type="radio" name="text"><span class="cards__info">S</span>
-                    </label>
-                  </div>
-                  <div class="cards__radio-item">
-                    <label class="cards__radio-label">
-                      <input class="cards__radio-input" type="radio" name="text"><span class="cards__info">L</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="cards__price">Цена: 4556 руб</div>
+              <div class="cards__price">Цена:<span class="cards__price-tot js-card__price">4568</span><span class="cards__price-span">руб</span></div>
               <div class="cards__deleviry">Доставим бесплатно в ближайшее время</div>
-              <div class="cards__item"><a class="cards__link btn" href="#">Оформить заказ</a><a class="cards__home btn" href="index.html">На главную</a></div>
+              <div class="cards__item"><a class="cards__link btn js-cart__link" href="#">Оформить заказ</a><a class="cards__home btn" href="index.html">На главную</a></div>
             </div>
           </div>
         </div>
@@ -157,7 +137,7 @@
       </div>
     </footer>
     <div class="container">
-      <button class="cart-icon">
+      <button class="cart-icon js-cards">
         <div class="cart-icon__wrap"><span class="cart-icon__counter">0</span><img class="cart-icon__img" src="images/cart.svg" alt="Корзина"></div>
       </button>
     </div>
@@ -169,55 +149,10 @@
             <h2 class="cart__wrap-title">Корзина</h2>
           </div>
         </div>
-        <div class="row wrap">
-          <div class="col-5 col-sm-3">
-            <div class="cart__images">
-              <picture>
-                <source type="image/webp" data-srcset="images/swip1.webp" srcset="images/common/placeholder.png"/><img class="lazy cart__img" data-src="images/swip1.jpg" src="images/common/placeholder.png" alt=""/>
-              </picture>
-              <label class="cards__radio-label">
-                <input class="cards__radio-input" type="radio" name="text"><span class="cart__info cards__info">M</span>
-              </label>
-            </div>
-          </div>
-          <div class="col-7 col-sm-4 col-md-5">
-            <h3 class="cart__title">Название букета</h3>
-          </div>
-          <div class="col-sm-3 col-md-2 d-flex align-items-center quantity">
-            <button class="cart__quant cart__plus">+</button><span class="cart__count">0</span>
-            <button class="cart__quant cart__minus">—</button>
-          </div>
-          <div class="col-sm-2 d-flex justify-content-end totl">
-            <div class="cart__total">4568 руб</div>
-            <div class="cart__remuv">x</div>
-          </div>
-        </div>
-        <div class="row wrap">
-          <div class="col-5 col-sm-3">
-            <div class="cart__images">
-              <picture>
-                <source type="image/webp" data-srcset="images/delivery-photo.webp" srcset="images/common/placeholder.png"/><img class="lazy cart__img" data-src="images/delivery-photo.jpg" src="images/common/placeholder.png" alt=""/>
-              </picture>
-              <label class="cards__radio-label">
-                <input class="cards__radio-input" type="radio" name="text"><span class="cart__info cards__info">M</span>
-              </label>
-            </div>
-          </div>
-          <div class="col-7 col-sm-4 col-md-5">
-            <h3 class="cart__title">Название букета</h3>
-          </div>
-          <div class="col-sm-3 col-md-2 d-flex align-items-center quantity">
-            <button class="cart__quant cart__plus">+</button><span class="cart__count">0</span>
-            <button class="cart__quant cart__minus">—</button>
-          </div>
-          <div class="col-sm-2 d-flex justify-content-end totl">
-            <div class="cart__total">4568 руб</div>
-            <div class="cart__remuv">x</div>
-          </div>
-        </div>
+        <div class="cart__js"></div>
         <div class="row">
           <div class="col-12 d-flex justify-content-end">
-            <div class="cart__total-price">Итого: 25894 руб</div>
+            <div class="cart__total-price">Итого:<span class="cart__total-span">25894</span><span class="cards__price-span">руб</span></div>
           </div>
         </div>
         <div class="form__wrapper">
